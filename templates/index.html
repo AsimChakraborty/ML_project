@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+                <div class="login-box">
+                  <!-- <ig src="https://t4.ftcdn.net/jpg/02/95/84/31/360_F_295843167_LMfF7K73B3qNrLjgbVyXXKsqxwfn7jPI.jpg" alt="avator"> -->
+                  <!-- <img src="{{ url_for('static', filename = 'img/bd1jpg.jpg') }}" alt=""> -->
+                  
+                  <h3>Laptop Price prediction</h3>
+                    <form action=" {{ url_for('predict')}}"method="post">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Brand</option>
+                        <option value="1">Acer</option>
+                        <option value="2">Apple</option>
+                        <option value="3">Asus</option>
+                        <option value="4">Chuwi</option>
+                        <option value="5">Dell</option>
+                        <option value="6">Fujitsu</option>
+                        <option value="7">Google</option>
+                        <option value="8">HP</option>
+                        <option value="9">Huawei</option>
+                        <option value="10">LG</option>
+                        <option value="11">Lenovo</option>
+                        <option value="12">MSI</option>
+                        <option value="13">Mediacom</option>
+                        <option value="14">Microsoft</option>
+                        <option value="15">Razer</option>
+                        <option value="16">Samsung</option>
+                        <option value="17">Toshiba</option>
+                        <option value="18">Vero</option>
+                        <option value="19">OXiaomine</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Type</option>
+                        <option value="1">Ultrabook</option>
+                        <option value="2">Notebook</option>
+                        <option value="3">2 in 1 Convertible</option>
+                        <option value="4">Netbook</option>
+                        <option value="5">Gaming</option>
+                        <option value="6">Workstation</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Ram(in GB)</option>
+                        <option value="1">2</option>
+                        <option value="2">4</option>
+                        <option value="3">6</option>
+                        <option value="4">8</option>
+                        <option value="5">12</option>
+                        <option value="6">16</option>
+                        <option value="7">24</option>
+                        <option value="8">32</option>
+                        <option value="9">64</option>
+                      </select>
+                      <br><br>
+                      <input type="text" name="weight"  class="frm-ctrl" aria-label="Default select example" placeholder=" Weight of the Laptop" required="required" />
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>TouchScreen</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>IPS</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                      </select>
+                      <br><br>
+                      <input type="text" name="weight"  class="frm-ctrl" aria-label="Default select example" placeholder=" Screen Size" required="required" />
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Screen Resolution</option>
+                        <option value="1">1920x1080</option>
+                        <option value="2">1366x768</option>
+                        <option value="3">1600x900</option>
+                        <option value="4">3840x2160</option>
+                        <option value="5">3200x1800</option>
+                        <option value="6">2880x1800</option>
+                        <option value="7">2560x1600</option>
+                        <option value="8">2560x1440</option>
+                        <option value="9">2304x1440</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>CPU</option>
+                        <option value="1">Intel Core i5 7200U 2.5GHz</option>
+                        <option value="2">Intel Core i7 7700HQ 2.8GHz</option>
+                        <option value="3">Intel Core i7 7500U 2.7GHz</option>
+                        <option value="4">Intel Core i7 8550U 1.8GHz</option>
+                        <option value="5">Intel Core i5 8250U 1.6GHz</option>
+                        <option value="6">Intel Core M M3-6Y30 0.9GHz</option>
+                        <option value="7">AMD A9-Series 9420 2.9GHz</option>
+                        <option value="8">Intel Core i3 6006U 2.2GHz</option>
+                        <option value="9">AMD A6-Series 7310 2GHz</option>
+                        <option value="9">Intel Xeon E3-1535M v6 3.1GHz</option>
+                      </select>
+                      <br><br>
+                      
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>HDD(in GB)</option>
+                        <option value="1">0</option>
+                        <option value="2">128</option>
+                        <option value="3">256</option>
+                        <option value="4">512</option>
+                        <option value="5">1024</option>
+                        <option value="6">2048</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>SSD(in GB)</option>
+                        <option value="1">0</option>
+                        <option value="2">8</option>
+                        <option value="3">128</option>
+                        <option value="4">256</option>
+                        <option value="5">512</option>
+                        <option value="6">1024</option>
+                      </select>
+                      <br><br>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Gpu</option>
+                        <option value="1">Intel Iris Plus Graphics 640</option>
+                        <option value="2">Intel HD Graphics 6000</option>
+                        <option value="3">Intel HD Graphics 620</option>
+                        <option value="4">AMD Radeon Pro 455 </option>
+                        <option value="5">Intel Iris Plus Graphics 650</option>
+                        <option value="6">Intel HD Graphics 520</option>
+                        <option value="7">Intel HD Graphics</option>
+                        <option value="8">AMD Radeon R5 M330</option>
+                        <option value="9">Intel HD Graphics</option>
+                      </select>
+                        <br><br>
+                
+                        <button type="submit" class="btn-login">Predict</button>
+                        <h3>{{ prediction_text }}</h3>
+                    </form>
+                  </div>
+              </div>
+            </div>
+         </div>
+</section>
+</body>
+</html>
